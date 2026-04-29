@@ -10,17 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
-  m_Name: VolvaBranch0Node0
+  m_Name: VolvaBranch3Node0
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  DisplayText: It has been a long time since someone made it this far into the Fjord,
-    your will must be strong. Sit.
+  DisplayText: 'That is no way to talk to someone you need something from. But I
+    like your drive, whether I like it or not you do remind me of Asmund. '
   isPlayerThought: 0
   PlayerChoices:
   - name: '[Next]'
     ChoiceText: '[Next]'
     NeededFlags: []
-    FlagsToSet:
-    - name: hasTalkedToVolva
-      FlagChange: 2
-      ChangeAmount: 0
-    NextNode: {fileID: 11400000, guid: 2051149771bea3d4499bf3d1676f8d16, type: 2}
+    FlagsToSet: []
+    NextNode: {fileID: 11400000, guid: 8fefc62536ece814f9ff669ad178dc5e, type: 2}
+    isLast: 0

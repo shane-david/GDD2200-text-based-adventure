@@ -10,11 +10,12 @@ public class DialogueNode : ScriptableObject
     //private data
     //-------------
 
-    [Header("NPC")]
+    [Header("Text")]
     [TextArea(3,10)]
-    [SerializeField] private string NPCText;                   // the text the NPC will be displaying
+    [SerializeField] private string DisplayText;                   // the text the NPC will be displaying
+    [SerializeField] private bool   isPlayerThought; // whether or not to draw the text as a player thought or a npc line
 
-    [Header("Player")]
+    [Header("Choices")]
     [SerializeField] private List<PlayerChoice> PlayerChoices; // the choices the player has for this NPC text 
 
     //---------------

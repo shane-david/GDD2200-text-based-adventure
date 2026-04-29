@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [System.Serializable]
@@ -13,6 +14,7 @@ public class PlayerChoice
     //-------------
 
     [Header("UI")]
+    [TextArea(1,10)]
     [SerializeField] private string       ChoiceText;  // the text to be displayed on the choice 
 
     [Header("Flags")]
@@ -22,7 +24,8 @@ public class PlayerChoice
 
     [Header("Flow")]
     [SerializeField] private DialogueNode NextNode;    // the node that the player will be directed to once this choie is selected
-
+    public bool isLast; // whether or not this is the last node in the conversatoin 
+    
     //---------------
     //public methods
     //---------------
