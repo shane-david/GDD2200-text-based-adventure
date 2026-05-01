@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
   m_Name: RagnavaldBranch0Node4
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  DisplayText: 
+  DisplayText: Surtr lives at the core of the Volcano, only a few of us have actually
+    seen him, if you ask me Ylva is as good as dead!
   isPlayerThought: 0
-  PlayerChoices: []
+  PlayerChoices:
+  - name: '[Find Ylva]'
+    ChoiceText: '[Find Ylva]'
+    NeededFlags: []
+    FlagsToSet: []
+    NextNode: {fileID: 0}
+    isLast: 1

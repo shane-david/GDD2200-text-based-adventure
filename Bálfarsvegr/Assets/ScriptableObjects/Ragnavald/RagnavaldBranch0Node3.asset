@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
   m_Name: RagnavaldBranch0Node3
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  DisplayText: 
+  DisplayText: "Yes my friend! Ylva seeks the Breath of Surtr! The best fuel in the
+    world. Surtr claims that it can blow up an entire Viking fleet, and it gets hot
+    enough to melt Loftj\xE1rn!"
   isPlayerThought: 0
-  PlayerChoices: []
+  PlayerChoices:
+  - name: "That's why she's here, she seeks a Loftj\xE1rn weapon as well."
+    ChoiceText: "That's why she's here, she seeks a Loftj\xE1rn weapon as well."
+    NeededFlags: []
+    FlagsToSet: []
+    NextNode: {fileID: 11400000, guid: b6acc58286353834995827087dacb1ed, type: 2}
+    isLast: 0

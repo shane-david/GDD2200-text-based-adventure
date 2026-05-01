@@ -19,7 +19,7 @@ MonoBehaviour:
   - name: "[Give Extra Loftj\xE1rn]"
     ChoiceText: "[Give Extra Loftj\xE1rn]"
     NeededFlags:
-    - name: LaftjarnCount
+    - name: loftjarnCount
       FlagCondition: 4
       Compare: 2
     FlagsToSet:

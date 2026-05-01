@@ -12,6 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
   m_Name: NarratorPostFleetNode0
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  DisplayText: 
+  DisplayText: For the first time since the Great War the Gaurdian Fleet has fallen,
+    and it was by your hands. You sail to shores of Forlagsey and face Valdris' army.
+    You realize this is not a battle that can be won by playing it safe, and Valdris
+    must fall.
   isPlayerThought: 0
-  PlayerChoices: []
+  PlayerChoices:
+  - name: '[Burn your boats]'
+    ChoiceText: '[Burn your boats]'
+    NeededFlags: []
+    FlagsToSet:
+    - name: didBurnBoats
+      FlagChange: 2
+      ChangeAmount: 0
+    - name: questKillValdris
+      FlagChange: 2
+      ChangeAmount: 0
+    - name: questBreakFleet
+      FlagChange: 3
+      ChangeAmount: 0
+    NextNode: {fileID: 0}
+    isLast: 1
+  - name: '[Attack with a backup plan]'
+    ChoiceText: '[Attack with a backup plan]'
+    NeededFlags: []
+    FlagsToSet:
+    - name: didBurnBoats
+      FlagChange: 3
+      ChangeAmount: 0
+    - name: questKillValdris
+      FlagChange: 2
+      ChangeAmount: 0
+    - name: questBreakFleet
+      FlagChange: 3
+      ChangeAmount: 0
+    NextNode: {fileID: 0}
+    isLast: 1

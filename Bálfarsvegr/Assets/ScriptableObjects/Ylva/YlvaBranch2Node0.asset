@@ -25,5 +25,8 @@ MonoBehaviour:
     - name: questFindNomads
       FlagChange: 2
       ChangeAmount: 0
+    - name: questReturnHome
+      FlagChange: 2
+      ChangeAmount: 0
     NextNode: {fileID: 0}
     isLast: 1

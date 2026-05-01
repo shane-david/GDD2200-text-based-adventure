@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9b6870cfe1ec014db8cbae949e7cd6d, type: 3}
   m_Name: Asmund
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  Name: 
+  Name: Asmund
   StartNodeOptions: []

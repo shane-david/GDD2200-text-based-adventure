@@ -12,14 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
   m_Name: NarratorStealthNode1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  DisplayText: "You are certain that you will need Loftj\xE1rn to defeat Valdris.
-    Dagr is a good friend but he is far too protective, and he does not understand
-    the threat Valdris is. "
+  DisplayText: "While the village sleeps you journey to the chunk of Loftj\xE1rn
+    in the middle of the village, careful that no one will see you. "
   isPlayerThought: 0
   PlayerChoices:
-  - name: "[Steal Loftj\xE1rn in the middle of the night]"
-    ChoiceText: "[Steal Loftj\xE1rn in the middle of the night]"
+  - name: "[Take one Loftj\xE1rn] "
+    ChoiceText: "[Take one Loftj\xE1rn] "
     NeededFlags: []
-    FlagsToSet: []
+    FlagsToSet:
+    - name: loftjarnCount
+      FlagChange: 0
+      ChangeAmount: 1
+    - name: questObtainLoftjarn
+      FlagChange: 3
+      ChangeAmount: 1
+    - name: questLoftjarnStealth
+      FlagChange: 3
+      ChangeAmount: 1
     NextNode: {fileID: 0}
-    isLast: 0
+    isLast: 1
+  - name: "[Take two Loftj\xE1rn] "
+    ChoiceText: "[Take two Loftj\xE1rn] "
+    NeededFlags: []
+    FlagsToSet:
+    - name: loftjarnCount
+      FlagChange: 0
+      ChangeAmount: 2
+    - name: questObtainLoftjarn
+      FlagChange: 3
+      ChangeAmount: 2
+    - name: questLoftjarnStealth
+      FlagChange: 3
+      ChangeAmount: 2
+    NextNode: {fileID: 0}
+    isLast: 1

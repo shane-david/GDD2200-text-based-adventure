@@ -12,6 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
   m_Name: RagnavaldBranch0Node0
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  DisplayText: 
+  DisplayText: Welcome to the Fire Headland! Me and my friends here are referred
+    to as "Fire Nomads" to outsiders but we are just regular people. What are you
+    doing here?
   isPlayerThought: 0
-  PlayerChoices: []
+  PlayerChoices:
+  - name: 'Ylva told me to find the Fire Nomads here. '
+    ChoiceText: 'Ylva told me to find the Fire Nomads here. '
+    NeededFlags: []
+    FlagsToSet:
+    - name: hasTalkedToRagnavald
+      FlagChange: 2
+      ChangeAmount: 0
+    - name: questFindNomads
+      FlagChange: 3
+      ChangeAmount: 0
+    NextNode: {fileID: 11400000, guid: f7bb988b46264024e933356eeebefc2f, type: 2}
+    isLast: 0
+  - name: Regular people? You live next to a volcano...
+    ChoiceText: Regular people? You live next to a volcano...
+    NeededFlags: []
+    FlagsToSet:
+    - name: hasTalkedToRagnavald
+      FlagChange: 3
+      ChangeAmount: 0
+    - name: humanityScore
+      FlagChange: 0
+      ChangeAmount: 2
+    - name: questFindNomads
+      FlagChange: 2
+      ChangeAmount: 2
+    NextNode: {fileID: 11400000, guid: 29fa42a719eb45541aa31a7ed1772a77, type: 2}
+    isLast: 0

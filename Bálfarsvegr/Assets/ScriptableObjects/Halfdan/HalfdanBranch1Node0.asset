@@ -22,6 +22,9 @@ MonoBehaviour:
     - name: questBuildBlade
       FlagChange: 2
       ChangeAmount: 0
+    - name: questTalkToHalfdan
+      FlagChange: 3
+      ChangeAmount: 0
     NextNode: {fileID: 11400000, guid: 7329a3bde63de0f4ca14872d6508596d, type: 2}
     isLast: 0
   - name: What do you have in stock?

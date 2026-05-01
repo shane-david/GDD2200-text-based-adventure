@@ -12,5 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9b6870cfe1ec014db8cbae949e7cd6d, type: 3}
   m_Name: Ragnavald
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  Name: 
-  StartNodeOptions: []
+  Name: Ragnavald the Nomad
+  StartNodeOptions:
+  - StartNode: {fileID: 11400000, guid: 52d823b7cb2ea6846b0fc8587fe5ad69, type: 2}
+    Flags:
+    - name: hasTalkedToRagnavald
+      FlagCondition: 1
+      Compare: 0
+  - StartNode: {fileID: 11400000, guid: 069ff554036839d479b90175d561536e, type: 2}
+    Flags:
+    - name: hasTalkedToRagnavald
+      FlagCondition: 0
+      Compare: 0

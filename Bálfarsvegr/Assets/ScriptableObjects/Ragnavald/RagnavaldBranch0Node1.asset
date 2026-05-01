@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
   m_Name: RagnavaldBranch0Node1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  DisplayText: 
+  DisplayText: Yes my dear friend, the volcano brings peace! The Viking spirit requires
+    living in spite of danger, it is how we grow, how we get better.
   isPlayerThought: 0
-  PlayerChoices: []
+  PlayerChoices:
+  - name: 'Ylva told me to find the Fire Nomads here.  '
+    ChoiceText: 'Ylva told me to find the Fire Nomads here.  '
+    NeededFlags: []
+    FlagsToSet: []
+    NextNode: {fileID: 11400000, guid: f7bb988b46264024e933356eeebefc2f, type: 2}
+    isLast: 0
