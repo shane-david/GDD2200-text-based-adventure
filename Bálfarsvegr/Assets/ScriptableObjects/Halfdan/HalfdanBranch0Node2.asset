@@ -10,20 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
-  m_Name: VolvaBranch5Node1
+  m_Name: HalfdanBranch0Node2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  DisplayText: "V\xF6lva imbues the stick with power"
-  isPlayerThought: 1
+  DisplayText: "Long ago B\xE1lfarsvegr was plagued by a long painful war, called
+    the Great War. We fought long and hard but eventually, our leader Bjorn the Unbroken
+    was ... broken."
+  isPlayerThought: 0
   PlayerChoices:
   - name: '[Next]'
     ChoiceText: '[Next]'
     NeededFlags: []
-    FlagsToSet:
-    - name: isVindstafrEnabled
-      FlagChange: 2
-      ChangeAmount: 0
-    - name: questFindVindstafr
-      FlagChange: 3
-      ChangeAmount: 0
-    NextNode: {fileID: 11400000, guid: 5694c4e36cb83e54bb8b3ba4d11526a9, type: 2}
+    FlagsToSet: []
+    NextNode: {fileID: 11400000, guid: 70c3ab0ad5e13d540a5b6b815cd37492, type: 2}
     isLast: 0

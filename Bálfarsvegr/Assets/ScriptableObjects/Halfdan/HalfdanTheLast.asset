@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9b6870cfe1ec014db8cbae949e7cd6d, type: 3}
+  m_Name: HalfdanTheLast
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  Name: Halfdan The Last
+  StartNodeOptions:
+  - StartNode: {fileID: 11400000, guid: 133d43fc51f58204db70d2c7a3e44d74, type: 2}
+    Flags:
+    - name: hasTalkedToHalfdan
+      FlagCondition: 1
+      Compare: 0
+  - StartNode: {fileID: 11400000, guid: 278fe1db57e3a89498c97b0ee295a3de, type: 2}
+    Flags:
+    - name: hasTalkedToHalfdan
+      FlagCondition: 0
+      Compare: 0
+    - name: hasLaftjarn
+      FlagCondition: 1
+      Compare: 0
+    - name: hasBreath
+      FlagCondition: 1
+      Compare: 0
+  - StartNode: {fileID: 11400000, guid: dc6ed6c96fcd86c4b8b934a9101488b6, type: 2}
+    Flags:
+    - name: hasTalkedToHalfdan
+      FlagCondition: 0
+      Compare: 0
+    - name: hasLaftjarn
+      FlagCondition: 0
+      Compare: 0
+    - name: hasBreath
+      FlagCondition: 1
+      Compare: 0
+  - StartNode: {fileID: 11400000, guid: fb54541f7bf95044c9b50fefad818a81, type: 2}
+    Flags:
+    - name: hasTalkedToHalfdan
+      FlagCondition: 0
+      Compare: 0
+    - name: hasLaftjarn
+      FlagCondition: 0
+      Compare: 0
+    - name: hasBreath
+      FlagCondition: 0
+      Compare: 0

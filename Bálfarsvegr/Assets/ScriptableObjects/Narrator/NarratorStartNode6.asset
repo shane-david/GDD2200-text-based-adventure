@@ -10,20 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
-  m_Name: VolvaBranch5Node1
+  m_Name: NarratorStartNode6
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  DisplayText: "V\xF6lva imbues the stick with power"
-  isPlayerThought: 1
+  DisplayText: "Your serve one purpose as the new leader of Fornaheim, defeat Valdris.
+    There is one problem, Hl\xEDf\xF0arfloti, the Guardian Fleet stands between you
+    and valdris' island Forlagsey. The Guradian fleet has not been breached since
+    the Great War and is by most considered impenetrable. "
+  isPlayerThought: 0
   PlayerChoices:
   - name: '[Next]'
     ChoiceText: '[Next]'
     NeededFlags: []
-    FlagsToSet:
-    - name: isVindstafrEnabled
-      FlagChange: 2
-      ChangeAmount: 0
-    - name: questFindVindstafr
-      FlagChange: 3
-      ChangeAmount: 0
-    NextNode: {fileID: 11400000, guid: 5694c4e36cb83e54bb8b3ba4d11526a9, type: 2}
+    FlagsToSet: []
+    NextNode: {fileID: 11400000, guid: b202f050b7f440848b537c6a85078e19, type: 2}
     isLast: 0

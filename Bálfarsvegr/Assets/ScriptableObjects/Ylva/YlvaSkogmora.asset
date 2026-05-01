@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9b6870cfe1ec014db8cbae949e7cd6d, type: 3}
+  m_Name: YlvaSkogmora
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  Name: Ylva Skogmora
+  StartNodeOptions:
+  - StartNode: {fileID: 11400000, guid: d0746ba360b2855489e6a2e769fb51b0, type: 2}
+    Flags:
+    - name: hasTalkedToYlva
+      FlagCondition: 1
+      Compare: 0
+  - StartNode: {fileID: 11400000, guid: 0b4425c274b828e49b36a9a0476f29fe, type: 2}
+    Flags:
+    - name: hasTalkedToYlva
+      FlagCondition: 0
+      Compare: 0
+    - name: rootCount
+      FlagCondition: 6
+      Compare: 0
+  - StartNode: {fileID: 11400000, guid: 24382b3937b07be47bb11ed33ef6f55a, type: 2}
+    Flags:
+    - name: hasTalkedToYlva
+      FlagCondition: 0
+      Compare: 0
+    - name: rootCount
+      FlagCondition: 2
+      Compare: 0

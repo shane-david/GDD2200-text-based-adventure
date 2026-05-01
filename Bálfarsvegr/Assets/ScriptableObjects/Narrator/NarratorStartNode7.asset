@@ -10,19 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
-  m_Name: VolvaBranch0Node4
+  m_Name: NarratorStartNode7
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  DisplayText: 'It will not be that easy young Viking. This is all the information
-    I will tell you: ''The path you seek devours the fearful, all flee the storm,
-    but embracing it will lift you farther than before.'' Find the staff and return
-    to me, then I will truly see how much you resemble Asmund.'
+  DisplayText: 'The Elders have come up with a plan. Build a ship, a ship that is
+    strong enough to survive the fire of the Gaurdian Fleet, and a ship that has
+    a powerful enough explosive to destroy the Gaurdian Fleet. You set off on the
+    Resource Conquest with one goal in mind: Build Eldskip.'
   isPlayerThought: 0
   PlayerChoices:
-  - name: '[Leave]'
-    ChoiceText: '[Leave]'
+  - name: '[Done]'
+    ChoiceText: '[Done]'
     NeededFlags: []
     FlagsToSet:
-    - name: questFindVindstafr
+    - name: questBuildEldskip
+      FlagChange: 2
+      ChangeAmount: 0
+    - name: resourceConquest
       FlagChange: 2
       ChangeAmount: 0
     NextNode: {fileID: 0}

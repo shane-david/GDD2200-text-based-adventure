@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
+  m_Name: HalfdanBranch0Node5
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  DisplayText: Anyways, I have watched everyone from the Great War fall after Bjorn
+    did, I am the Last.
+  isPlayerThought: 0
+  PlayerChoices:
+  - name: You inspire be Halfdan, Valdris will fall!
+    ChoiceText: You inspire be Halfdan, Valdris will fall!
+    NeededFlags: []
+    FlagsToSet:
+    - name: humanityScore
+      FlagChange: 0
+      ChangeAmount: 2
+    NextNode: {fileID: 11400000, guid: 278fe1db57e3a89498c97b0ee295a3de, type: 2}
+    isLast: 0
+  - name: Enough of that, show me your shop.
+    ChoiceText: Enough of that, show me your shop.
+    NeededFlags: []
+    FlagsToSet:
+    - name: humanityScore
+      FlagChange: 1
+      ChangeAmount: 3
+    NextNode: {fileID: 11400000, guid: 278fe1db57e3a89498c97b0ee295a3de, type: 2}
+    isLast: 0

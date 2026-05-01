@@ -10,20 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
-  m_Name: VolvaBranch0Node4
+  m_Name: YlvaBranch1Node0
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  DisplayText: 'It will not be that easy young Viking. This is all the information
-    I will tell you: ''The path you seek devours the fearful, all flee the storm,
-    but embracing it will lift you farther than before.'' Find the staff and return
-    to me, then I will truly see how much you resemble Asmund.'
+  DisplayText: Remember to rest until night, you can find a bed at the inn.
   isPlayerThought: 0
   PlayerChoices:
   - name: '[Leave]'
     ChoiceText: '[Leave]'
     NeededFlags: []
-    FlagsToSet:
-    - name: questFindVindstafr
-      FlagChange: 2
-      ChangeAmount: 0
+    FlagsToSet: []
     NextNode: {fileID: 0}
     isLast: 1

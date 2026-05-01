@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
+  m_Name: HalfdanBranch0Node0
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  DisplayText: "Welcome to Halfdan\u2019s shop. Owned by yours truly, Halfdan the
+    Last. What do you want\u2026"
+  isPlayerThought: 0
+  PlayerChoices:
+  - name: Why do they call you the last?
+    ChoiceText: Why do they call you the last?
+    NeededFlags: []
+    FlagsToSet:
+    - name: hasTalkedToHalfdan
+      FlagChange: 2
+      ChangeAmount: 0
+    NextNode: {fileID: 11400000, guid: df81ea93d08598a4b8b609ac698fa365, type: 2}
+    isLast: 0
+  - name: What do you have in stock?
+    ChoiceText: What do you have in stock?
+    NeededFlags: []
+    FlagsToSet:
+    - name: hasTalkedToHalfdan
+      FlagChange: 2
+      ChangeAmount: 0
+    NextNode: {fileID: 11400000, guid: 278fe1db57e3a89498c97b0ee295a3de, type: 2}
+    isLast: 0
