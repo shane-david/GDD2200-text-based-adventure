@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: Narrator
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   Name: 
-  StartNodeOptions: []
+  NPCPrefab: {fileID: 0}
+  StartNodeOptions:
+  - StartNode: {fileID: 11400000, guid: b17aaadd3fb12a14dac29fc39d44475e, type: 2}
+    Flags:
+    - name: questLoftjarnStealth
+      FlagCondition: 0
+      Compare: 0

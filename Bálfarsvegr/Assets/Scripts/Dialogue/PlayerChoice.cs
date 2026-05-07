@@ -19,7 +19,7 @@ public class PlayerChoice
 
     [Header("Flags")]
 
-    [SerializeField] private List<ConditionFlag> NeededFlags; // flags necessary for this option to appear
+    public List<ConditionFlag> NeededFlags; // flags necessary for this option to appear
     [SerializeField] private List<SetFlag> FlagsToSet;  // flags that will be set if this option is selected
 
     [Header("Flow")]
@@ -30,16 +30,59 @@ public class PlayerChoice
     //public methods
     //---------------
     
-    //TODO: handle the logic for when this choice is selected
-    public void Selected()
-    {
-        
+    //try to go to the next node, if you can set the next node of the NPC and return true
+    //if you can not return false and the caller will handle the logic
+    public bool TryGoNext(NPC npc)
+    {   
+        // if its not last set the new current node to next node
+        if (!isLast)
+        {   
+            npc.SetCurrentNode(NextNode); 
+            return true; 
+        }
+
+        return false; 
     }
 
-    //TODO: try to go to the next node
-    public bool TryGoNext()
+    // sets the flags for when that choice is sleected
+    public void SetFlags()
     {
-        return true; 
+        
+        // iterate through the set flags list and call it from the flag maanager
+        foreach (var flag in FlagsToSet)
+        {   
+            
+            // if the flag is a quest, we want to set it as so 
+            if (flag.name.Substring(0,5) == "quest")
+            {   
+
+                // if we are setting the quest as true add it 
+                if (flag.FlagChange == FlagChanges.setTrue) {
+
+                    FlagManager.Instance.StartQuest(flag.name); 
+
+                // if we are setting the flag as false, remove it 
+                } else if (flag.FlagChange == FlagChanges.setFalse) {
+                    
+                    FlagManager.Instance.CompleteQuest(flag.name); 
+
+                // otherwise throw an error
+                } else {
+                    
+                }
+            }
+
+            // if it is a number flag it will be increase or decrese
+            if (flag.FlagChange == FlagChanges.increase) {
+                FlagManager.Instance.SetFlag(flag.name, flag.ChangeAmount);
+            } else if (flag.FlagChange == FlagChanges.decrease) {
+                FlagManager.Instance.SetFlag(flag.name, -1 * flag.ChangeAmount);
+
+            // otherwise it is set true or set false
+            } else {
+                FlagManager.Instance.SetFlag(flag.name, flag.FlagChange == FlagChanges.setTrue); 
+            }
+        }
     }
 
     //--------

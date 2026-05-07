@@ -33,31 +33,13 @@ MonoBehaviour:
   - name: '[Health Potion]'
     ChoiceText: '[Health Potion]'
     NeededFlags:
-    - name: hasPotion
-      FlagCondition: 1
+    - name: potionCount
+      FlagCondition: 6
       Compare: 0
     FlagsToSet:
-    - name: hasPotion
-      FlagChange: 2
-      ChangeAmount: 10
-    NextNode: {fileID: 11400000, guid: 740e1e41d491db14292a6912b45416ca, type: 2}
-    isLast: 0
-  - name: '[Weapon Upgrade]'
-    ChoiceText: '[Weapon Upgrade]'
-    NeededFlags:
-    - name: weaponDamage
-      FlagCondition: 5
-      Compare: 90
-    FlagsToSet:
-    - name: weaponDamage
+    - name: potionCount
       FlagChange: 0
-      ChangeAmount: 10
-    NextNode: {fileID: 11400000, guid: 740e1e41d491db14292a6912b45416ca, type: 2}
-    isLast: 0
-  - name: '[Apple]'
-    ChoiceText: '[Apple]'
-    NeededFlags: []
-    FlagsToSet: []
+      ChangeAmount: 1
     NextNode: {fileID: 11400000, guid: 740e1e41d491db14292a6912b45416ca, type: 2}
     isLast: 0
   - name: '[Leave]'

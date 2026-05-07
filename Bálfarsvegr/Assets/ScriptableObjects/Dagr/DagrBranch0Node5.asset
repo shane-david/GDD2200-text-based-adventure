@@ -16,8 +16,8 @@ MonoBehaviour:
     blade. More would do you well but that is all I can spare, forgive me."
   isPlayerThought: 0
   PlayerChoices:
-  - name: Thank you Dagr, Valdri will fall.
-    ChoiceText: Thank you Dagr, Valdri will fall.
+  - name: Thank you Dagr, Valdris will fall.
+    ChoiceText: Thank you Dagr, Valdris will fall.
     NeededFlags: []
     FlagsToSet:
     - name: humanityScore
@@ -25,6 +25,9 @@ MonoBehaviour:
       ChangeAmount: 3
     - name: loftjarnCount
       FlagChange: 0
+      ChangeAmount: 1
+    - name: questObtainLoftjarn
+      FlagChange: 3
       ChangeAmount: 1
     NextNode: {fileID: 0}
     isLast: 1

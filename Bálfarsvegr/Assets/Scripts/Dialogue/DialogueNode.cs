@@ -18,15 +18,14 @@ public class DialogueNode : ScriptableObject
     [Header("Choices")]
     [SerializeField] private List<PlayerChoice> PlayerChoices; // the choices the player has for this NPC text 
 
-    //---------------
-    //public methods
-    //---------------
+    //--------
+    //getters
+    //--------
+    public string GetDialogue() => DisplayText; 
 
-    //TODO: functionality to render the dialogue for the node
-    public void RenderDialogue()
-    {
-        
-    }
+    public bool IsPlayerThought() => isPlayerThought; 
+
+    public List<PlayerChoice> GetChoices() => PlayerChoices; 
 
     //------------
     //EDITOR ONLY

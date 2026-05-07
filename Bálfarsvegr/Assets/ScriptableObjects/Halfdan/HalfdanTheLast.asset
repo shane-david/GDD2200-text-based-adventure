@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: HalfdanTheLast
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   Name: Halfdan The Last
+  NPCPrefab: {fileID: 8855454437238218675, guid: 2eb88a4f39eeb0442b6169a5d849d7a1, type: 3}
   StartNodeOptions:
   - StartNode: {fileID: 11400000, guid: 133d43fc51f58204db70d2c7a3e44d74, type: 2}
     Flags:
@@ -24,31 +25,31 @@ MonoBehaviour:
     - name: hasTalkedToHalfdan
       FlagCondition: 0
       Compare: 0
-    - name: hasLaftjarn
-      FlagCondition: 1
+    - name: loftjarnCount
+      FlagCondition: 6
       Compare: 0
-    - name: hasBreath
-      FlagCondition: 1
+    - name: breathCount
+      FlagCondition: 6
       Compare: 0
   - StartNode: {fileID: 11400000, guid: dc6ed6c96fcd86c4b8b934a9101488b6, type: 2}
     Flags:
     - name: hasTalkedToHalfdan
       FlagCondition: 0
       Compare: 0
-    - name: hasLaftjarn
-      FlagCondition: 0
-      Compare: 0
-    - name: hasBreath
-      FlagCondition: 1
+    - name: loftjarnCount
+      FlagCondition: 4
+      Compare: 1
+    - name: breathCount
+      FlagCondition: 6
       Compare: 0
   - StartNode: {fileID: 11400000, guid: fb54541f7bf95044c9b50fefad818a81, type: 2}
     Flags:
     - name: hasTalkedToHalfdan
       FlagCondition: 0
       Compare: 0
-    - name: hasLaftjarn
-      FlagCondition: 0
-      Compare: 0
-    - name: hasBreath
-      FlagCondition: 0
-      Compare: 0
+    - name: loftjarnCount
+      FlagCondition: 4
+      Compare: 1
+    - name: breathCount
+      FlagCondition: 4
+      Compare: 1
