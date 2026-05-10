@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   DisplayText: I see you have part of the Root of Ygdrassil, cherish it, it is very
     dear to my people. I will tell you one more thing traveler, it will do you well
-    to seek the Fire Nomads of Eldarnes, but the Fire Headlan is very dangerous,
+    to seek the Fire Nomads of Eldarnes, but the Fire Headland is very dangerous,
     return home and rest first. May we meet again traveler...
   isPlayerThought: 0
   PlayerChoices:

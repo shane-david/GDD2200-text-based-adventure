@@ -40,7 +40,7 @@ MonoBehaviour:
       FlagChange: 0
       ChangeAmount: 2
     - name: questFindNomads
-      FlagChange: 2
+      FlagChange: 3
       ChangeAmount: 2
     NextNode: {fileID: 11400000, guid: 29fa42a719eb45541aa31a7ed1772a77, type: 2}
     isLast: 0

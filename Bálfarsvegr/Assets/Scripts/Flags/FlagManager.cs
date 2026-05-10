@@ -1,7 +1,5 @@
-using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEngine;
+
 
 public class FlagManager : Singleton<FlagManager>
 {
@@ -25,12 +23,19 @@ public class FlagManager : Singleton<FlagManager>
     {   
         base.Awake(); 
 
+        if (Instance != this) return; 
+
         // NPC talked to flags
         SetFlag("hasTalkedToHalfdan", false); 
         SetFlag("hasTalkedToDagr", false); 
+        SetFlag("hasTalkedToYlva", false); 
+        SetFlag("hasTalkedToRagnavald", false); 
 
         // player progress flags
-        SetFlag("powerConquest", false); 
+        SetFlag("powerConquest", false);
+        SetFlag("onGjotuneyjar", false);  
+        SetFlag("onMorkreyjar", false); 
+        SetFlag("onEldarnes", false); 
 
         // Player stats
         SetFlag("humanityScore", 0); 
@@ -40,6 +45,7 @@ public class FlagManager : Singleton<FlagManager>
         SetFlag("loftjarnCount", 0); 
         SetFlag("breathCount", 0); 
         SetFlag("potionCount", 0); 
+        SetFlag("rootCount", 0);
     }
 
     //--------------
@@ -124,6 +130,11 @@ public class FlagManager : Singleton<FlagManager>
     public void CompleteQuest(string quest)
     {
         _questManager.RemoveQuest(quest); 
+    }
+
+    public bool IsQuestActive(string quest)
+    {
+        return _questManager.IsQuestActive(quest); 
     }
 
 

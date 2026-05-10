@@ -13,11 +13,26 @@ MonoBehaviour:
   m_Name: YlvaSkogmora
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   Name: Ylva Skogmora
+  NPCPrefab: {fileID: 4334044713275706509, guid: ee05586dadda3d540b9075811be9dc59, type: 3}
   StartNodeOptions:
+  - StartNode: {fileID: 11400000, guid: 14ca906750815e14a976d038e62b4d72, type: 2}
+    Flags:
+    - name: hasTalkedToYlva
+      FlagCondition: 0
+      Compare: 0
+    - name: questFindNomads
+      FlagCondition: 1
+      Compare: 0
+    - name: onEldarnes
+      FlagCondition: 0
+      Compare: 0
   - StartNode: {fileID: 11400000, guid: d0746ba360b2855489e6a2e769fb51b0, type: 2}
     Flags:
     - name: hasTalkedToYlva
       FlagCondition: 1
+      Compare: 0
+    - name: onMorkreyjar
+      FlagCondition: 0
       Compare: 0
   - StartNode: {fileID: 11400000, guid: 0b4425c274b828e49b36a9a0476f29fe, type: 2}
     Flags:
@@ -27,6 +42,9 @@ MonoBehaviour:
     - name: rootCount
       FlagCondition: 6
       Compare: 0
+    - name: onMorkreyjar
+      FlagCondition: 0
+      Compare: 0
   - StartNode: {fileID: 11400000, guid: 24382b3937b07be47bb11ed33ef6f55a, type: 2}
     Flags:
     - name: hasTalkedToYlva
@@ -35,11 +53,6 @@ MonoBehaviour:
     - name: rootCount
       FlagCondition: 2
       Compare: 0
-  - StartNode: {fileID: 11400000, guid: 14ca906750815e14a976d038e62b4d72, type: 2}
-    Flags:
-    - name: hasTalkedToYlva
+    - name: onMorkreyjar
       FlagCondition: 0
-      Compare: 0
-    - name: questFindNomads
-      FlagCondition: 1
       Compare: 0

@@ -22,9 +22,9 @@ public class NPC : ScriptableObject
     //-----------------------
 
     //TODO: error checking 
-    private void Awake()
+    private void OnEnable()
     {
-         
+         _currentNode = null; 
     }
 
     //---------------
@@ -63,7 +63,25 @@ public class NPC : ScriptableObject
     }
 
     private bool DetermineFlag(ConditionFlag flag)
-    {
+    {   
+
+        // if it is a quest flag do the quest method instead of the determine flag method 
+        if (flag.name.Substring(0,5) == "quest")
+        {   
+
+            // if they want it to be true return if it is active 
+            if (flag.FlagCondition == FlagConditions.flagTrue) {
+
+                return FlagManager.Instance.IsQuestActive(flag.name); 
+
+            // otherwise if it needs to be false, return if it is not active 
+            } else if (flag.FlagCondition == FlagConditions.flagFalse) {
+
+                return !FlagManager.Instance.IsQuestActive(flag.name); 
+                
+            }
+        }
+
         // if it is a boolean flag the condtion will be true or false, so determine the value
         if (flag.FlagCondition == FlagConditions.flagTrue || flag.FlagCondition == FlagConditions.flagFalse) {
             

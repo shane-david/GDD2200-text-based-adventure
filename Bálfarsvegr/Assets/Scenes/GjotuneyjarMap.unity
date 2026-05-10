@@ -2927,6 +2927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GjotuneyjarSceneManager
   Name: 
+  ShipCutscene: {fileID: 67968002}
 --- !u!1001 &1485580796
 PrefabInstance:
   m_ObjectHideFlags: 0

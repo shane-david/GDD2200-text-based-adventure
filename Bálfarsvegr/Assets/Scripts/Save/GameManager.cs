@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine; 
 using UnityEngine.SceneManagement; 
 
@@ -13,6 +14,7 @@ public class GameManager : Singleton<GameManager>
 
     private BaseSceneManager CurrentScene; 
     [HideInInspector] public BaseSceneManager PreviousScene; 
+    private HashSet<string> _visitedScenes = new(); 
 
     //-----------------------
     //Unity Lifetime Methods
@@ -21,6 +23,9 @@ public class GameManager : Singleton<GameManager>
     protected override void Awake()
     {
         base.Awake(); 
+
+        if (Instance != this) return; 
+
         SetCurrentScene(); 
         CurrentScene.Instantiate(); 
     }
@@ -40,12 +45,20 @@ public class GameManager : Singleton<GameManager>
             throw new System.Exception("[GameManager] No SceneManager found in scene!"); 
         }
 
+        // subscribe the on scene loaded event to SceneManager
+        SceneManager.sceneLoaded -= OnSceneLoaded; 
+        SceneManager.sceneLoaded += OnSceneLoaded; 
+
         // go to the scene
         SceneManager.LoadScene(sceneName); 
 
-        // subscribe the on scene loaded event to SceneManager
-        SceneManager.sceneLoaded += OnSceneLoaded; 
+    }
 
+    // if it is the first visit add it the hash map 
+    // if it is not the first visit return false 
+    public bool IsFirstVisit(string sceneName)
+    {
+        return _visitedScenes.Add(sceneName); 
     }
 
     //----------------

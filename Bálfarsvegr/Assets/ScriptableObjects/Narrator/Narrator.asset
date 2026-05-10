@@ -12,11 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9b6870cfe1ec014db8cbae949e7cd6d, type: 3}
   m_Name: Narrator
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  Name: 
-  NPCPrefab: {fileID: 0}
+  Name: Narrator
+  NPCPrefab: {fileID: 245941299926917989, guid: 6e44a455ac8c4c844a1ce84ad1e418a3, type: 3}
   StartNodeOptions:
+  - StartNode: {fileID: 11400000, guid: 4a9e57f30b1c61045a566e552f1a9ca5, type: 2}
+    Flags:
+    - name: onGjotuneyjar
+      FlagCondition: 0
+      Compare: 0
+    - name: questLoftjarnStealth
+      FlagCondition: 1
+      Compare: 0
   - StartNode: {fileID: 11400000, guid: b17aaadd3fb12a14dac29fc39d44475e, type: 2}
     Flags:
+    - name: onGjotuneyjar
+      FlagCondition: 0
+      Compare: 0
     - name: questLoftjarnStealth
       FlagCondition: 0
       Compare: 0

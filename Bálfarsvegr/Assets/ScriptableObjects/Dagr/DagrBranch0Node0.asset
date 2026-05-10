@@ -37,5 +37,8 @@ MonoBehaviour:
     - name: hasTalkedToDagr
       FlagChange: 2
       ChangeAmount: 2
+    - name: respectfulToDagr
+      FlagChange: 3
+      ChangeAmount: 2
     NextNode: {fileID: 11400000, guid: 9c4a6728d28b9f047a382e69a194f7bc, type: 2}
     isLast: 0

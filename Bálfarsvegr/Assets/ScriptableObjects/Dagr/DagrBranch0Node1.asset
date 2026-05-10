@@ -30,6 +30,9 @@ MonoBehaviour:
   - name: I am simply searching, I do not like talking about the details.
     ChoiceText: I am simply searching, I do not like talking about the details.
     NeededFlags: []
-    FlagsToSet: []
+    FlagsToSet:
+    - name: respectfulToDagr
+      FlagChange: 3
+      ChangeAmount: 0
     NextNode: {fileID: 11400000, guid: 4f1b49822ea40094698709267eff6605, type: 2}
     isLast: 0

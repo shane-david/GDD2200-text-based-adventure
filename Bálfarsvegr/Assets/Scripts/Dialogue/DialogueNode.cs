@@ -25,7 +25,44 @@ public class DialogueNode : ScriptableObject
 
     public bool IsPlayerThought() => isPlayerThought; 
 
-    public List<PlayerChoice> GetChoices() => PlayerChoices; 
+    public List<PlayerChoice> GetChoices()
+    {
+        // instantiate the list 
+        List<PlayerChoice> validChoices = new(); 
+
+        // iterate through the current nodes choices 
+        foreach (var choice in PlayerChoices)
+        {
+            
+            // set a boolean to say the choice status is renderabel
+            bool choiceStatus = true; 
+
+            // iterate through each choice's needed flags 
+            foreach (var flag in choice.NeededFlags)
+            {
+                // if it is a boolean flag the condtion will be true or false, so determine the value
+                if (flag.FlagCondition == FlagConditions.flagTrue || flag.FlagCondition == FlagConditions.flagFalse) {
+                    
+                    choiceStatus = FlagManager.Instance.DetermineFlag(flag.name, flag.FlagCondition); 
+
+                // otherwise it is a number flag
+                } else {
+                    
+                    choiceStatus = FlagManager.Instance.DetermineFlag(flag.name, flag.FlagCondition, flag.Compare); 
+
+                }
+            }
+
+            // if the status remains true, add it to the list of return string
+            if (choiceStatus)
+            {
+                validChoices.Add(choice); 
+            }
+        }
+
+        // return only the valid choices 
+        return validChoices; 
+    }
 
     //------------
     //EDITOR ONLY

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Ragnavald
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   Name: Ragnavald the Nomad
+  NPCPrefab: {fileID: 633437337647705436, guid: a10b051f586a35542ad0a1b41ee124d2, type: 3}
   StartNodeOptions:
   - StartNode: {fileID: 11400000, guid: 52d823b7cb2ea6846b0fc8587fe5ad69, type: 2}
     Flags:
