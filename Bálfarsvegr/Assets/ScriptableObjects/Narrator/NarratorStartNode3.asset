@@ -15,7 +15,7 @@ MonoBehaviour:
   DisplayText: '[One year later...]
 
 '
-  isPlayerThought: 0
+  isPlayerThought: 1
   PlayerChoices:
   - name: '[Next]'
     ChoiceText: '[Next]'

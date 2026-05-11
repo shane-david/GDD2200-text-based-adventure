@@ -12,13 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
   m_Name: NarratorStartNode0
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  DisplayText: You wake up... it is dark, you here screaming, you here fighting.
+  DisplayText: You wake up... it is dark, you hear screaming, you hear fighting.
     You immediately get out of bed and draw your sword, something terrible is happening.
   isPlayerThought: 0
   PlayerChoices:
   - name: '[Next]'
     ChoiceText: '[Next]'
     NeededFlags: []
-    FlagsToSet: []
+    FlagsToSet:
+    - name: GameStart
+      FlagChange: 3
+      ChangeAmount: 0
     NextNode: {fileID: 11400000, guid: 659e09a0dc4b39c43ac93f023fe50fb1, type: 2}
     isLast: 0

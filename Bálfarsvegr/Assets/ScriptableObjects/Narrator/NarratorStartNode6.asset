@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   DisplayText: "Your serve one purpose as the new leader of Fornaheim, defeat Valdris.
     There is one problem, Hl\xEDf\xF0arfloti, the Guardian Fleet stands between you
-    and valdris' island Forlagsey. The Guradian fleet has not been breached since
+    and Valdris' island Forlagsey. The Guradian fleet has not been breached since
     the Great War and is by most considered impenetrable. "
   isPlayerThought: 0
   PlayerChoices:

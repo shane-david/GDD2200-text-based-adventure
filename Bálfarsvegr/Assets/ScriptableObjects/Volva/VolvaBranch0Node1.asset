@@ -27,8 +27,13 @@ MonoBehaviour:
       FlagChange: 2
       ChangeAmount: 2
     NextNode: {fileID: 11400000, guid: e3b4277b219c2414398eb4ca8f2fd249, type: 2}
+    isLast: 0
   - name: We have no time, how can I harness the wind?
     ChoiceText: We have no time, how can I harness the wind?
     NeededFlags: []
-    FlagsToSet: []
+    FlagsToSet:
+    - name: talkedAboutAsmund
+      FlagChange: 3
+      ChangeAmount: 0
     NextNode: {fileID: 11400000, guid: 972ea1fab4f0d2941b100e00c340f8ff, type: 2}
+    isLast: 0

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 4efb6de8abc94fb4d89e2734a4dd4524
+  - enabled: 1
     path: Assets/Scenes/DialogueScene.unity
     guid: afe3cdcdcd9e86342b34b667320e61c3
   - enabled: 1
@@ -17,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FornaheimMap.unity
     guid: 7184177d340095d4492e9a7e23b244ad
+  - enabled: 1
+    path: Assets/Scenes/MorkreyJarMap.unity
+    guid: dd56e81aa7190b346be349f5751407b6
+  - enabled: 1
+    path: Assets/Scenes/RootScene.unity
+    guid: d40c76e85e88c9746a8faa271bcb1c2f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

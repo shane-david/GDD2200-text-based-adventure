@@ -16,8 +16,9 @@ MonoBehaviour:
     mission.
   isPlayerThought: 1
   PlayerChoices:
-  - name: We have not time. How can I harness the wind?
-    ChoiceText: We have not time. How can I harness the wind?
+  - name: We have no time. How can I harness the wind?
+    ChoiceText: We have no time. How can I harness the wind?
     NeededFlags: []
     FlagsToSet: []
     NextNode: {fileID: 11400000, guid: 972ea1fab4f0d2941b100e00c340f8ff, type: 2}
+    isLast: 0

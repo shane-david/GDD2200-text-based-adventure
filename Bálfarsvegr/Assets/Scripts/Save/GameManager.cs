@@ -13,7 +13,7 @@ public class GameManager : Singleton<GameManager>
     public NPC Narrator; 
 
     private BaseSceneManager CurrentScene; 
-    [HideInInspector] public BaseSceneManager PreviousScene; 
+    [HideInInspector] public string NextScene; 
     private HashSet<string> _visitedScenes = new(); 
 
     //-----------------------
@@ -33,14 +33,16 @@ public class GameManager : Singleton<GameManager>
     //---------------
     //public methods
     //---------------
-    public void GoToScene(string sceneName)
+    public void GoToScene(string sceneName, string nextScene = null)
     {
 
-        // keep track of the previous scene so we can return 
-        PreviousScene = FindFirstObjectByType<BaseSceneManager>(); 
+        // if the caller did not specify the next scene, just make it the current scene
+        // so that we can return here after the dialogue scene, if they did specify, set it 
+        NextScene = (nextScene == null) ? FindFirstObjectByType<BaseSceneManager>().Name : nextScene; 
+        
 
         // make sure the scene manager is found
-        if (PreviousScene == null)
+        if (NextScene == null)
         {
             throw new System.Exception("[GameManager] No SceneManager found in scene!"); 
         }

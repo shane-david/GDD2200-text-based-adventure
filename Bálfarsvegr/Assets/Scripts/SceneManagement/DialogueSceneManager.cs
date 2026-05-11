@@ -84,7 +84,7 @@ public class DialogueSceneManager : BaseSceneManager
 
         // otherwise, return to the npcs home 
         } else {
-            GameManager.Instance.GoToScene(GameManager.Instance.PreviousScene.Name); 
+            GameManager.Instance.GoToScene(GameManager.Instance.NextScene); 
         }
     }
 

@@ -10,29 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9b6870cfe1ec014db8cbae949e7cd6d, type: 3}
-  m_Name: Narrator
+  m_Name: Ship
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  Name: Narrator
-  NPCPrefab: {fileID: 245941299926917989, guid: 6e44a455ac8c4c844a1ce84ad1e418a3, type: 3}
+  Name: Ship
+  NPCPrefab: {fileID: 8826389575641422556, guid: b5331ba6fb4dff140a1ffebd743c5791, type: 3}
   StartNodeOptions:
-  - StartNode: {fileID: 11400000, guid: 5c43e2a9f131b2f4eaa7c6d76ae8f576, type: 2}
+  - StartNode: {fileID: 11400000, guid: db8b77883fe84e14d97e5d4066526bbc, type: 2}
     Flags:
-    - name: GameStart
+    - name: onFornaheim
       FlagCondition: 0
       Compare: 0
-  - StartNode: {fileID: 11400000, guid: 4a9e57f30b1c61045a566e552f1a9ca5, type: 2}
+  - StartNode: {fileID: 11400000, guid: 04e8f725f0829384aa2d5caefd765d78, type: 2}
     Flags:
-    - name: onGjotuneyjar
+    - name: onMorkreyjar
       FlagCondition: 0
       Compare: 0
-    - name: questLoftjarnStealth
-      FlagCondition: 1
-      Compare: 0
-  - StartNode: {fileID: 11400000, guid: b17aaadd3fb12a14dac29fc39d44475e, type: 2}
+  - StartNode: {fileID: 11400000, guid: c5b0a89cf815ea344914fa822e87a213, type: 2}
     Flags:
     - name: onGjotuneyjar
-      FlagCondition: 0
-      Compare: 0
-    - name: questLoftjarnStealth
       FlagCondition: 0
       Compare: 0

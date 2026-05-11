@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Diagnostics;
+using UnityEngine; 
 
 
 public class FlagManager : Singleton<FlagManager>
@@ -25,17 +27,27 @@ public class FlagManager : Singleton<FlagManager>
 
         if (Instance != this) return; 
 
+        // temp keep in mind for saving
+        SetFlag("GameStart", false); 
+
         // NPC talked to flags
         SetFlag("hasTalkedToHalfdan", false); 
         SetFlag("hasTalkedToDagr", false); 
         SetFlag("hasTalkedToYlva", false); 
+        SetFlag("ylvaHelp", false); 
         SetFlag("hasTalkedToRagnavald", false); 
+        SetFlag("hasTalkedToVolva", false); 
 
         // player progress flags
         SetFlag("powerConquest", false);
+        SetFlag("resourceConquest", true); 
+        SetFlag("onFornaheim", false); 
         SetFlag("onGjotuneyjar", false);  
         SetFlag("onMorkreyjar", false); 
+        SetFlag("MorkreyjarNight", false); 
         SetFlag("onEldarnes", false); 
+        SetFlag("onOgnarfjordr", false); 
+        SetFlag("narratorVoiceCount", 0); 
 
         // Player stats
         SetFlag("humanityScore", 0); 
@@ -46,6 +58,11 @@ public class FlagManager : Singleton<FlagManager>
         SetFlag("breathCount", 0); 
         SetFlag("potionCount", 0); 
         SetFlag("rootCount", 0);
+        SetFlag("vindstafrCount", 0); 
+        SetFlag("isVindstafrEnabled", false); 
+
+        // starting quests
+        StartQuest("questExplore"); 
     }
 
     //--------------
@@ -55,6 +72,7 @@ public class FlagManager : Singleton<FlagManager>
     // set flag method for the number flags
     public void SetFlag(string flag, int change)
     {   
+        UnityEngine.Debug.Log($"Flag: {flag} changed by {change}");
         // if it does exist add it
         bool doesNotExist = _numberFlags.TryAdd(flag, change); 
 
@@ -67,7 +85,8 @@ public class FlagManager : Singleton<FlagManager>
 
     // set flage override for the boolean flags
     public void SetFlag(string flag, bool value)
-    {
+    {   
+        UnityEngine.Debug.Log($"Flag: {flag} set to {value}");
         _booleanFlags[flag] = value; 
     }
 

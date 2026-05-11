@@ -51,7 +51,7 @@ public class PlayerChoice
         // iterate through the set flags list and call it from the flag maanager
         foreach (var flag in FlagsToSet)
         {   
-            
+
             // if the flag is a quest, we want to set it as so 
             if (flag.name.Substring(0,5) == "quest")
             {   
@@ -68,8 +68,17 @@ public class PlayerChoice
 
                 // otherwise throw an error
                 } else {
-                    
+                    throw new System.Exception($"[PlayerChoice] {flag.name} is not being set to true or false!"); 
                 }
+
+                return; 
+            }
+
+            // if the flag is a scene set, we want to set it as so 
+            if (flag.name.Substring(0,5) == "scene")
+            {
+                GameManager.Instance.NextScene = flag.name.Substring(5); 
+                return; 
             }
 
             // if it is a number flag it will be increase or decrese

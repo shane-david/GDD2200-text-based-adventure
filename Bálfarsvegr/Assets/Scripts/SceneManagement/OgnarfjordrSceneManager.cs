@@ -1,15 +1,15 @@
 using UnityEngine;
 using UnityEngine.Playables;
 
-public class EldarnesSceneManager : BaseSceneManager
+public class OgnarfjordrSceneManager : BaseSceneManager
 {
 
     public PlayableDirector ShipCutscene; 
 
     public override void Instantiate()
     {
-        Name = "EldarnesMap"; 
-        Debug.Log("Insantiating Eldarnes Scene"); 
+        Name = "OgnarfjordrMap"; 
+        Debug.Log("Insantiating Ognarfjordr Scene"); 
 
         // if this is not the first time visiting this scene disable the cut scene
         if (!GameManager.Instance.IsFirstVisit(Name))

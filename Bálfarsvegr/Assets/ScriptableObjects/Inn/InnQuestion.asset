@@ -10,22 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
-  m_Name: NarratorPostLoftjarnNode0
+  m_Name: InnQuestion
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  DisplayText: "You traveled far to Gj\xF3tuneyjar and obtained Loftj\xE1rn, a material
-    almost certain to be helpful agains Valdris. Tired and still lost about Eldskip,
-    you return to your ship and ponder what to do next... "
-  isPlayerThought: 0
+  DisplayText: Would you like to rest at the inn?
+  isPlayerThought: 1
   PlayerChoices:
-  - name: '[Return to ship]'
-    ChoiceText: '[Return to ship]'
+  - name: '[Rest Until Night]'
+    ChoiceText: '[Rest Until Night]'
     NeededFlags: []
     FlagsToSet:
-    - name: narratorVoiceCount
-      FlagChange: 0
-      ChangeAmount: 1
-    - name: sceneGjotuneyjarMap
+    - name: MorkreyjarNight
       FlagChange: 2
       ChangeAmount: 0
+    NextNode: {fileID: 0}
+    isLast: 1
+  - name: '[Rest Until Morning]'
+    ChoiceText: '[Rest Until Morning]'
+    NeededFlags: []
+    FlagsToSet:
+    - name: MorkreyjarNight
+      FlagChange: 3
+      ChangeAmount: 0
+    NextNode: {fileID: 0}
+    isLast: 1
+  - name: '[Leave]'
+    ChoiceText: '[Leave]'
+    NeededFlags: []
+    FlagsToSet: []
     NextNode: {fileID: 0}
     isLast: 1

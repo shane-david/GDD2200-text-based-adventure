@@ -5,6 +5,7 @@ public class MorkreyjarrSceneManager : BaseSceneManager
 {
 
     public PlayableDirector ShipCutscene; 
+    public GameObject YlvaPeopleObject; 
 
     public override void Instantiate()
     {
@@ -14,7 +15,14 @@ public class MorkreyjarrSceneManager : BaseSceneManager
         // if this is not the first time visiting this scene disable the cut scene
         if (!GameManager.Instance.IsFirstVisit(Name))
         {
+            ShipCutscene.time = ShipCutscene.duration; 
+            ShipCutscene.Evaluate(); 
             ShipCutscene.enabled = false; 
+        }
+
+        // if ylva has been able to help, enable the person to click on to go to scene
+        if (FlagManager.Instance.DetermineFlag("ylvaHelp", FlagConditions.flagTrue) || FlagManager.Instance.DetermineFlag("MorkreyjarNight", FlagConditions.flagTrue)) {
+            YlvaPeopleObject.SetActive(true); 
         }
 
     }

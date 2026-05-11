@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Volva
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   Name: Volva
+  NPCPrefab: {fileID: 5097469277842074016, guid: 1288e7f8a02e3474c8d20b365367a753, type: 3}
   StartNodeOptions:
   - StartNode: {fileID: 11400000, guid: 93787a4377fbc3a4d85baf787a7d7b7c, type: 2}
     Flags:
@@ -24,9 +25,9 @@ MonoBehaviour:
     - name: hasTalkedToVolva
       FlagCondition: 0
       Compare: 0
-    - name: hasVindstafr
-      FlagCondition: 0
-      Compare: 0
+    - name: vindstafrCount
+      FlagCondition: 4
+      Compare: 1
     - name: isVindstafrEnabled
       FlagCondition: 0
       Compare: 0
@@ -35,14 +36,17 @@ MonoBehaviour:
     - name: hasTalkedToVolva
       FlagCondition: 0
       Compare: 0
-    - name: hasVindstafr
-      FlagCondition: 1
+    - name: vindstafrCount
+      FlagCondition: 6
       Compare: 0
   - StartNode: {fileID: 11400000, guid: 158543cad11f84d46a068ea5298c5491, type: 2}
     Flags:
     - name: hasTalkedToVolva
       FlagCondition: 0
       Compare: 0
-    - name: hasVindstafr
-      FlagCondition: 0
-      Compare: 0
+    - name: vindstafrCount
+      FlagCondition: 4
+      Compare: 1
+    - name: isVindstafrEnabled
+      FlagCondition: 1
+      Compare: 1

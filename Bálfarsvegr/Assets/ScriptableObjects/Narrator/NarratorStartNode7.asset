@@ -22,10 +22,13 @@ MonoBehaviour:
     ChoiceText: '[Done]'
     NeededFlags: []
     FlagsToSet:
-    - name: questBuildEldskip
+    - name: narratorVoiceCount
+      FlagChange: 0
+      ChangeAmount: 1
+    - name: resourceConquest
       FlagChange: 2
       ChangeAmount: 0
-    - name: resourceConquest
+    - name: questBuildEldskip
       FlagChange: 2
       ChangeAmount: 0
     NextNode: {fileID: 0}
