@@ -23,4 +23,9 @@ public class QuestManager
         Debug.Log($"[QuestManager] {quest} status is: {_activeQuests.Contains(quest)}"); 
         return _activeQuests.Contains(quest); 
     }
+
+    public HashSet<string> GetAllQuests()
+    {
+        return _activeQuests; 
+    }
 }

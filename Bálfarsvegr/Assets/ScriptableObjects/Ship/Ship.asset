@@ -32,8 +32,8 @@ MonoBehaviour:
     - name: rootCount
       FlagCondition: 4
       Compare: 1
-    - name: hasSecretWeapon
-      FlagCondition: 0
+    - name: loftjarnBladeCount
+      FlagCondition: 4
       Compare: 1
   - StartNode: {fileID: 11400000, guid: db8b77883fe84e14d97e5d4066526bbc, type: 2}
     Flags:

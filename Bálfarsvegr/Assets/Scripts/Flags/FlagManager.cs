@@ -63,7 +63,7 @@ public class FlagManager : Singleton<FlagManager>
         SetFlag("rootCount", 0);
         SetFlag("vindstafrCount", 0); 
         SetFlag("isVindstafrEnabled", false); 
-        SetFlag("hasSecretWeapon", false); 
+        SetFlag("loftjarnBladeCount", 0); 
 
         // starting quests
         StartQuest("questExplore"); 
@@ -164,6 +164,15 @@ public class FlagManager : Singleton<FlagManager>
     {
         return _questManager.IsQuestActive(quest); 
     }
+
+    public HashSet<string> GetQuests()
+    {
+        return _questManager.GetAllQuests(); 
+    }
+
+    public int GetHumanityScore() => _numberFlags["humanityScore"]; 
+
+    public Dictionary<string, int> GetNumberFlags() => _numberFlags; 
 
 
 }

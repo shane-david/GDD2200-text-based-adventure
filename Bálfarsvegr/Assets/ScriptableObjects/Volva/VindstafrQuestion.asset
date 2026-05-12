@@ -23,6 +23,12 @@ MonoBehaviour:
     - name: vindstafrCount
       FlagChange: 0
       ChangeAmount: 1
+    - name: questFindVindstafr
+      FlagChange: 3
+      ChangeAmount: 1
+    - name: questActivateVindstafr
+      FlagChange: 2
+      ChangeAmount: 1
     NextNode: {fileID: 0}
     isLast: 1
   - name: '[Leave]'

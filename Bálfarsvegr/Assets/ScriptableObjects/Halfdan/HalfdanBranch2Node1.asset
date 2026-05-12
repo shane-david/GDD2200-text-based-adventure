@@ -20,9 +20,9 @@ MonoBehaviour:
     ChoiceText: "[Make Loftj\xE1rn blade] "
     NeededFlags: []
     FlagsToSet:
-    - name: hasSecretWeapon
-      FlagChange: 2
-      ChangeAmount: 0
+    - name: loftjarnBladeCount
+      FlagChange: 0
+      ChangeAmount: 1
     - name: questBuildBlade
       FlagChange: 3
       ChangeAmount: 0

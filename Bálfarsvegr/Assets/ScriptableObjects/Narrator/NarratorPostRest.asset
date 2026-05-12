@@ -24,7 +24,7 @@ MonoBehaviour:
     - name: powerConquest
       FlagChange: 2
       ChangeAmount: 0
-    - name: resouceConquest
+    - name: resourceConquest
       FlagChange: 3
       ChangeAmount: 0
     - name: questReturnHome

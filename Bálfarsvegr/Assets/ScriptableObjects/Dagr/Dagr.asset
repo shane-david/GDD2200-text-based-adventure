@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9b6870cfe1ec014db8cbae949e7cd6d, type: 3}
   m_Name: Dagr
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  Name: Dagr
+  Name: Dagr The Strong
   NPCPrefab: {fileID: 3259356039491038568, guid: 56e57e521f86eff458c6f2b8fda61d9a, type: 3}
   StartNodeOptions:
   - StartNode: {fileID: 11400000, guid: ff241ff012ebdb64f810ef1c01785ea9, type: 2}
