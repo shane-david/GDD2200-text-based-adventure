@@ -36,3 +36,26 @@ MonoBehaviour:
     - name: questLoftjarnStealth
       FlagCondition: 0
       Compare: 0
+  - StartNode: {fileID: 11400000, guid: 080a9fd5c314e0447b3b02b1f1af98c9, type: 2}
+    Flags:
+    - name: onMorkreyjar
+      FlagCondition: 0
+      Compare: 0
+  - StartNode: {fileID: 11400000, guid: af25a62e33c18a84ab9a6b487ff8c254, type: 2}
+    Flags:
+    - name: onFornaheim
+      FlagCondition: 0
+      Compare: 0
+    - name: questReturnHome
+      FlagCondition: 0
+      Compare: 0
+  - StartNode: {fileID: 11400000, guid: 382a38321042b0c489551c3a90d16862, type: 2}
+    Flags:
+    - name: onOgnarfjordr
+      FlagCondition: 0
+      Compare: 0
+  - StartNode: {fileID: 11400000, guid: 2c5df4ff3875dc0499f6d9c6830b777e, type: 2}
+    Flags:
+    - name: atGuardianFleet
+      FlagCondition: 0
+      Compare: 0

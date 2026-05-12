@@ -28,6 +28,8 @@ public class UIInteractor : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData pointerEventData)
     {   
 
+        Debug.Log(name); 
+        
         // if verything is not set throw an error and return
         if (_npc == null && string.IsNullOrEmpty(_nextScene) && _flagToSet == null)
         {

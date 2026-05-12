@@ -26,6 +26,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RootScene.unity
     guid: d40c76e85e88c9746a8faa271bcb1c2f
+  - enabled: 1
+    path: Assets/Scenes/InsideEldarnes.unity
+    guid: 55091e926820cf243843d2dac4223b93
+  - enabled: 1
+    path: Assets/Scenes/VolvasHome.unity
+    guid: f2be44c0114a9f34e8218c45f0d747fb
+  - enabled: 1
+    path: Assets/Scenes/EldarnesMap.unity
+    guid: b07079ee662af0c4a9a38cdc5d0c12a1
+  - enabled: 1
+    path: Assets/Scenes/OgnarfjordrMap.unity
+    guid: c0ca5ea04a6d71b4c84c872c5748078c
+  - enabled: 1
+    path: Assets/Scenes/GuardianFleetMap.unity
+    guid: 845c57dcc5e87c4428337da13fe8574e
+  - enabled: 1
+    path: Assets/Scenes/ForlagseyMap.unity
+    guid: ed21db07bba36324d87c90a7b482fd19
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: ce8b5af7c7e3cab4d9bac24d5649cdc8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

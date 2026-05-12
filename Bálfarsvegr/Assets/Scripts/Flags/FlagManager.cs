@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
+using NUnit.Framework.Constraints;
 using UnityEngine; 
 
 
@@ -36,6 +37,7 @@ public class FlagManager : Singleton<FlagManager>
         SetFlag("hasTalkedToYlva", false); 
         SetFlag("ylvaHelp", false); 
         SetFlag("hasTalkedToRagnavald", false); 
+        SetFlag("hasTalkedToSurtr", false); 
         SetFlag("hasTalkedToVolva", false); 
 
         // player progress flags
@@ -47,6 +49,7 @@ public class FlagManager : Singleton<FlagManager>
         SetFlag("MorkreyjarNight", false); 
         SetFlag("onEldarnes", false); 
         SetFlag("onOgnarfjordr", false); 
+        SetFlag("atGuardianFleet", false); 
         SetFlag("narratorVoiceCount", 0); 
 
         // Player stats
@@ -60,9 +63,15 @@ public class FlagManager : Singleton<FlagManager>
         SetFlag("rootCount", 0);
         SetFlag("vindstafrCount", 0); 
         SetFlag("isVindstafrEnabled", false); 
+        SetFlag("hasSecretWeapon", false); 
 
         // starting quests
         StartQuest("questExplore"); 
+
+        // endings
+        SetFlag("trueEnding", false); 
+        SetFlag("shameEnding", false);
+        SetFlag("sacrificeEnding", false); 
     }
 
     //--------------

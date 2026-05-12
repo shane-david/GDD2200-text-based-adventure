@@ -53,7 +53,7 @@ public class PlayerChoice
         {   
 
             // if the flag is a quest, we want to set it as so 
-            if (flag.name.Substring(0,5) == "quest")
+            if (flag.name.Length >= 5 && flag.name.Substring(0,5) == "quest")
             {   
 
                 // if we are setting the quest as true add it 
@@ -71,14 +71,14 @@ public class PlayerChoice
                     throw new System.Exception($"[PlayerChoice] {flag.name} is not being set to true or false!"); 
                 }
 
-                return; 
+                continue; 
             }
 
             // if the flag is a scene set, we want to set it as so 
-            if (flag.name.Substring(0,5) == "scene")
+            if (flag.name.Length >= 5 && flag.name.Substring(0,5) == "scene")
             {
                 GameManager.Instance.NextScene = flag.name.Substring(5); 
-                return; 
+                continue; 
             }
 
             // if it is a number flag it will be increase or decrese

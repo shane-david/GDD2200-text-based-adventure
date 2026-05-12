@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
+  m_Name: BuildEldskip4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  DisplayText: "Finally, you met the revered seeress Volva at the center of \xD3gnarfj\xF6r\xF0r
+    where you obtained and activated Vindstafr in a noble effort to prevent the sacrifice
+    of another Viking. Now is the time, construct Eldskip, and for the first time
+    since Bjorn the Unbroken, breach the Gaurdian Fleet!"
+  isPlayerThought: 1
+  PlayerChoices:
+  - name: '[Build Eldskip]'
+    ChoiceText: '[Build Eldskip]'
+    NeededFlags: []
+    FlagsToSet:
+    - name: questBuildEldskip
+      FlagChange: 3
+      ChangeAmount: 0
+    - name: questDestroyFleet
+      FlagChange: 2
+      ChangeAmount: 0
+    - name: onFornaheim
+      FlagChange: 3
+      ChangeAmount: 0
+    - name: atGuardianFleet
+      FlagChange: 2
+      ChangeAmount: 0
+    - name: sceneGuardianFleetMap
+      FlagChange: 2
+      ChangeAmount: 0
+    NextNode: {fileID: 0}
+    isLast: 1

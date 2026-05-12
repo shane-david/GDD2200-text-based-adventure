@@ -19,6 +19,12 @@ MonoBehaviour:
   - name: '[Done]'
     ChoiceText: '[Done]'
     NeededFlags: []
-    FlagsToSet: []
+    FlagsToSet:
+    - name: powerConquest
+      FlagChange: 3
+      ChangeAmount: 0
+    - name: narratorVoiceCount
+      FlagChange: 0
+      ChangeAmount: 1
     NextNode: {fileID: 0}
     isLast: 1

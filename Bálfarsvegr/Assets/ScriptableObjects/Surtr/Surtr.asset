@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9b6870cfe1ec014db8cbae949e7cd6d, type: 3}
   m_Name: Surtr
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  Name: 
+  Name: Surtr
+  NPCPrefab: {fileID: 462888356923640766, guid: f68f3875864f84647b81be5fdbcc9cd9, type: 3}
   StartNodeOptions:
   - StartNode: {fileID: 11400000, guid: e4b7b8b2962b87a4d80f942eea111adb, type: 2}
     Flags:

@@ -19,6 +19,9 @@ MonoBehaviour:
   - name: '[Follow Ylva]'
     ChoiceText: '[Follow Ylva]'
     NeededFlags: []
-    FlagsToSet: []
+    FlagsToSet:
+    - name: sceneInsideEldarnes
+      FlagChange: 2
+      ChangeAmount: 0
     NextNode: {fileID: 0}
     isLast: 1

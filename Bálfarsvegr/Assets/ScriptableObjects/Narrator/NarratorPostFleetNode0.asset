@@ -28,8 +28,11 @@ MonoBehaviour:
     - name: questKillValdris
       FlagChange: 2
       ChangeAmount: 0
-    - name: questBreakFleet
+    - name: questDestroyFleet
       FlagChange: 3
+      ChangeAmount: 0
+    - name: sceneForlagseyMap
+      FlagChange: 2
       ChangeAmount: 0
     NextNode: {fileID: 0}
     isLast: 1
@@ -43,8 +46,11 @@ MonoBehaviour:
     - name: questKillValdris
       FlagChange: 2
       ChangeAmount: 0
-    - name: questBreakFleet
+    - name: questDestroyFleet
       FlagChange: 3
+      ChangeAmount: 0
+    - name: sceneForlagseyMap
+      FlagChange: 2
       ChangeAmount: 0
     NextNode: {fileID: 0}
     isLast: 1

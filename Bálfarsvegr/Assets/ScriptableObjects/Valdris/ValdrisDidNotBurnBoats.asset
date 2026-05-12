@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
+  m_Name: ValdrisDidNotBurnBoats
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  DisplayText: You COWARD! I am the son of Valdris the Great, heir of the army that
+    decided the great war. Sure, you got through my fleet, sure that Eldskip plan
+    of yours was clever, but do you really think you could be ME with something as
+    silly as a back up plan?
+  isPlayerThought: 0
+  PlayerChoices:
+  - name: '[Next]'
+    ChoiceText: '[Next]'
+    NeededFlags: []
+    FlagsToSet: []
+    NextNode: {fileID: 11400000, guid: 9066c5d4e55402449a0afc9866d87c7b, type: 2}
+    isLast: 0

@@ -24,5 +24,8 @@ MonoBehaviour:
     - name: questFindVolva
       FlagChange: 2
       ChangeAmount: 0
+    - name: sceneEldarnesMap
+      FlagChange: 2
+      ChangeAmount: 0
     NextNode: {fileID: 0}
     isLast: 1

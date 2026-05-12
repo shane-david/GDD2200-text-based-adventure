@@ -5,6 +5,7 @@ public class EldarnesSceneManager : BaseSceneManager
 {
 
     public PlayableDirector ShipCutscene; 
+    public GameObject YlvaObject; 
 
     public override void Instantiate()
     {
@@ -17,6 +18,12 @@ public class EldarnesSceneManager : BaseSceneManager
             ShipCutscene.time = ShipCutscene.duration; 
             ShipCutscene.Evaluate(); 
             ShipCutscene.enabled = false; 
+        }
+
+        // activate the ylva object after the player has talked to ragnava
+        if (FlagManager.Instance != null && FlagManager.Instance.DetermineFlag("hasTalkedToRagnavald", FlagConditions.flagTrue))
+        {
+            YlvaObject.SetActive(true); 
         }
 
     }

@@ -21,8 +21,17 @@ public class MorkreyjarrSceneManager : BaseSceneManager
         }
 
         // if ylva has been able to help, enable the person to click on to go to scene
-        if (FlagManager.Instance.DetermineFlag("ylvaHelp", FlagConditions.flagTrue) || FlagManager.Instance.DetermineFlag("MorkreyjarNight", FlagConditions.flagTrue)) {
-            YlvaPeopleObject.SetActive(true); 
+        if (FlagManager.Instance !=  null) {
+
+            if (FlagManager.Instance.DetermineFlag("ylvaHelp", FlagConditions.flagTrue) || FlagManager.Instance.DetermineFlag("MorkreyjarNight", FlagConditions.flagTrue)) {
+                YlvaPeopleObject.SetActive(true); 
+            }
+
+            if (FlagManager.Instance.DetermineFlag("rootCount", FlagConditions.flagGTE, 1) && FlagManager.Instance.DetermineFlag("narratorVoiceCount", FlagConditions.flagLT, 3))
+            {
+                GameManager.Instance.CurrentNPC = GameManager.Instance.Narrator; 
+                GameManager.Instance.GoToScene("DialogueScene");
+            }
         }
 
     }

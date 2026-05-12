@@ -15,6 +15,26 @@ MonoBehaviour:
   Name: Ship
   NPCPrefab: {fileID: 8826389575641422556, guid: b5331ba6fb4dff140a1ffebd743c5791, type: 3}
   StartNodeOptions:
+  - StartNode: {fileID: 11400000, guid: 687a0c46f7bc67342838f26609eaed3b, type: 2}
+    Flags:
+    - name: onFornaheim
+      FlagCondition: 0
+      Compare: 0
+    - name: isVindstafrEnabled
+      FlagCondition: 0
+      Compare: 0
+    - name: breathCount
+      FlagCondition: 4
+      Compare: 1
+    - name: rootCount
+      FlagCondition: 4
+      Compare: 1
+    - name: rootCount
+      FlagCondition: 4
+      Compare: 1
+    - name: hasSecretWeapon
+      FlagCondition: 0
+      Compare: 1
   - StartNode: {fileID: 11400000, guid: db8b77883fe84e14d97e5d4066526bbc, type: 2}
     Flags:
     - name: onFornaheim
@@ -28,5 +48,15 @@ MonoBehaviour:
   - StartNode: {fileID: 11400000, guid: c5b0a89cf815ea344914fa822e87a213, type: 2}
     Flags:
     - name: onGjotuneyjar
+      FlagCondition: 0
+      Compare: 0
+  - StartNode: {fileID: 11400000, guid: 7a3eb07bd73dfea468ad04d82bb0e58e, type: 2}
+    Flags:
+    - name: onEldarnes
+      FlagCondition: 0
+      Compare: 0
+  - StartNode: {fileID: 11400000, guid: e2e06cd500c096f4a993a2bfbda0a36d, type: 2}
+    Flags:
+    - name: onOgnarfjordr
       FlagCondition: 0
       Compare: 0

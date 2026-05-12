@@ -34,7 +34,7 @@ MonoBehaviour:
     NeededFlags: []
     FlagsToSet:
     - name: hasTalkedToRagnavald
-      FlagChange: 3
+      FlagChange: 2
       ChangeAmount: 0
     - name: humanityScore
       FlagChange: 0

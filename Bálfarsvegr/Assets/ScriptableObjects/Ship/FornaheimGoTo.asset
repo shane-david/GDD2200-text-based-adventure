@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
   m_Name: FornaheimGoTo
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  DisplayText: Where would you like to depart to?
+  DisplayText: Where would you like to depart?
   isPlayerThought: 1
   PlayerChoices:
   - name: '[Gjotuneyjar]'

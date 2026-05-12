@@ -5,6 +5,7 @@ public class OgnarfjordrSceneManager : BaseSceneManager
 {
 
     public PlayableDirector ShipCutscene; 
+    public GameObject TornadoObject; 
 
     public override void Instantiate()
     {
@@ -17,6 +18,22 @@ public class OgnarfjordrSceneManager : BaseSceneManager
             ShipCutscene.time = ShipCutscene.duration; 
             ShipCutscene.Evaluate(); 
             ShipCutscene.enabled = false; 
+        }
+
+        // once the player has talked to Volva, enable the tornado
+        if (FlagManager.Instance != null && FlagManager.Instance.DetermineFlag("hasTalkedToVolva", FlagConditions.flagTrue))
+        {
+            TornadoObject.SetActive(true); 
+        }
+
+        
+        // if the player is done with volva go to the narrator line 
+        if (FlagManager.Instance !=  null) {
+
+            if (FlagManager.Instance.DetermineFlag("isVindstafrEnabled", FlagConditions.flagTrue) && FlagManager.Instance.DetermineFlag("narratorVoiceCount", FlagConditions.flagLT, 4)) {
+                GameManager.Instance.CurrentNPC = GameManager.Instance.Narrator; 
+                GameManager.Instance.GoToScene("DialogueScene");
+            }
         }
 
     }

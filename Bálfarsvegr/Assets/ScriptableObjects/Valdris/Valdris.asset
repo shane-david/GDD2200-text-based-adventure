@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9b6870cfe1ec014db8cbae949e7cd6d, type: 3}
+  m_Name: Valdris
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  Name: Valdris The Wicked
+  NPCPrefab: {fileID: 3796524009169202283, guid: 52da864e158a4da49a55282bc4da8d06, type: 3}
+  StartNodeOptions:
+  - StartNode: {fileID: 11400000, guid: d4e946cece816494d80242c759cb835e, type: 2}
+    Flags:
+    - name: didBurnBoats
+      FlagCondition: 1
+      Compare: 0
+  - StartNode: {fileID: 11400000, guid: b51695d8ee2658a45a0115b00e85b3bd, type: 2}
+    Flags:
+    - name: didBurnBoats
+      FlagCondition: 0
+      Compare: 0

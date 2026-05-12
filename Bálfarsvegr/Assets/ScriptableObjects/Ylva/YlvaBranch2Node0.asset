@@ -22,10 +22,13 @@ MonoBehaviour:
     ChoiceText: '[Leave]'
     NeededFlags: []
     FlagsToSet:
+    - name: questReturnHome
+      FlagChange: 2
+      ChangeAmount: 0
     - name: questFindNomads
       FlagChange: 2
       ChangeAmount: 0
-    - name: questReturnHome
+    - name: sceneMorkreyJarMap
       FlagChange: 2
       ChangeAmount: 0
     NextNode: {fileID: 0}

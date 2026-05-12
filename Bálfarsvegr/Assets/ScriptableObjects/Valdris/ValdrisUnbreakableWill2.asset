@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d7522dfc651be4fa63b7a6b2797080, type: 3}
+  m_Name: ValdrisUnbreakableWill2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  DisplayText: "As Valdris bleeds out your revel in your victory. You did it, you
+    did it for your people, you did it for Dagr, for Ylva, for Ragnavald, for Volva,
+    for all of B\xE1lfarsvegr, you did it for Asmund. As his name appears in your
+    mind you see a ghostly figure appear in front of you.  "
+  isPlayerThought: 0
+  PlayerChoices:
+  - name: '[Investigate] '
+    ChoiceText: '[Investigate] '
+    NeededFlags: []
+    FlagsToSet: []
+    NextNode: {fileID: 11400000, guid: 32033e5b584e0b748b3e3f7ad8adf271, type: 2}
+    isLast: 0

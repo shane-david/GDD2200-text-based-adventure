@@ -23,7 +23,7 @@ MonoBehaviour:
     - name: hasSecretWeapon
       FlagChange: 2
       ChangeAmount: 0
-    - name: buildBlade
+    - name: questBuildBlade
       FlagChange: 3
       ChangeAmount: 0
     NextNode: {fileID: 0}

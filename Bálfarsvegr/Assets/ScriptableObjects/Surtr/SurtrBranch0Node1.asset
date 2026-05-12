@@ -20,8 +20,11 @@ MonoBehaviour:
     ChoiceText: '[Take Breath of Surtr]'
     NeededFlags: []
     FlagsToSet:
-    - name: hasBreath
-      FlagChange: 2
-      ChangeAmount: 0
-    NextNode: {fileID: 0}
+    - name: breathCount
+      FlagChange: 0
+      ChangeAmount: 1
+    - name: questObtainBreathOfSurtr
+      FlagChange: 3
+      ChangeAmount: 1
+    NextNode: {fileID: 11400000, guid: 4b53a85b93cee90439047c0f05a26e74, type: 2}
     isLast: 0
