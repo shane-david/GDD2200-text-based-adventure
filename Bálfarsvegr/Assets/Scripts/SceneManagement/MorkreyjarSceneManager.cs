@@ -9,7 +9,7 @@ public class MorkreyjarrSceneManager : BaseSceneManager
 
     public override void Instantiate()
     {
-        Name = "MorkreyjarMap"; 
+        Name = "MorkreyJarMap"; 
         Debug.Log("Insantiating Morkreyjar Scene"); 
 
         // if this is not the first time visiting this scene disable the cut scene
