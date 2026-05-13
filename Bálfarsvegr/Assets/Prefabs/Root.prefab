@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7197920379364130801}
   - component: {fileID: 2922724931296639779}
   - component: {fileID: 4073582433704907251}
+  - component: {fileID: 5619801158475569106}
   m_Layer: 0
   m_Name: Root
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5, y: 2.4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 25
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -4408199426896362574, guid: b8caba40eafd0554f89e6b6b20d3ce13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -126,15 +127,36 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0017444268, y: 0.0034890175}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.48, y: 0.45}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.4871245, y: 0.44874603}
   m_EdgeRadius: 0
+--- !u!114 &5619801158475569106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4597683629758407680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88fed82e387efe04f94957d87d24eac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIInteractor
+  _npc: {fileID: 11400000, guid: 26ca9feea0b8be741888c60604784a75, type: 2}
+  _nextScene: 
+  _flagToSet:
+    name: 
+    FlagChange: 0
+    ChangeAmount: 0
+  _hoverTitle: Root of Ygdrassil
+  _hoverDescription: Claim to Build Eldskip!
+  _hoverPanelPrefab: {fileID: 2038754093592697434, guid: 5ebefe55283d7c24480bb87821727899, type: 3}

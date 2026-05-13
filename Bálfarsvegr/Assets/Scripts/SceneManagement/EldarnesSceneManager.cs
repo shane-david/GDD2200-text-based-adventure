@@ -6,6 +6,7 @@ public class EldarnesSceneManager : BaseSceneManager
 
     public PlayableDirector ShipCutscene; 
     public GameObject YlvaObject; 
+    public AudioClip PowerConquestMusic; 
 
     public override void Instantiate()
     {
@@ -25,6 +26,8 @@ public class EldarnesSceneManager : BaseSceneManager
         {
             YlvaObject.SetActive(true); 
         }
+
+        SoundManager.Instance.ChangBackgroundMusic(PowerConquestMusic); 
 
     }
 }

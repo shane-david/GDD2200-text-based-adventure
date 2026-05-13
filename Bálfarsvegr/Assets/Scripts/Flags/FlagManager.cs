@@ -49,7 +49,7 @@ public class FlagManager : Singleton<FlagManager>
         SetFlag("MorkreyjarNight", false); 
         SetFlag("onEldarnes", false); 
         SetFlag("onOgnarfjordr", false); 
-        SetFlag("atGuardianFleet", false); 
+        SetFlag("atGuardianFleet", true); 
         SetFlag("narratorVoiceCount", 0); 
 
         // Player stats

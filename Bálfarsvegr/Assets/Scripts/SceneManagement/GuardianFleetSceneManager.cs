@@ -5,7 +5,7 @@ public class GuardianFleetSceneManager : BaseSceneManager
 {
 
     public PlayableDirector ShipCutscene;
-
+    public AudioClip BattleMusic; 
     public override void Instantiate()
     {
         Name = "GuardianFleetMap"; 
@@ -20,6 +20,8 @@ public class GuardianFleetSceneManager : BaseSceneManager
             ShipCutscene.Evaluate();
             ShipCutscene.enabled = false; 
         }
+
+        SoundManager.Instance.ChangBackgroundMusic(BattleMusic); 
     }
 
     private void AfterCutscene(PlayableDirector director)

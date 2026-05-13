@@ -4,11 +4,13 @@ using UnityEngine.Playables;
 public class StartSceneManager : BaseSceneManager
 {
 
+    public AudioClip StartingMusic;
+
     public override void Instantiate()
     {
         Name = "StartScreen"; 
         Debug.Log("Insantiating StartScreen Scene"); 
-
+        SoundManager.Instance.ChangBackgroundMusic(StartingMusic); 
     }
 
     public void OnStart()
