@@ -399,7 +399,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 474778727}
         m_TargetAssemblyTypeName: StartSceneManager, Assembly-CSharp
-        m_MethodName: OnStart
+        m_MethodName: TryLoadSave
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

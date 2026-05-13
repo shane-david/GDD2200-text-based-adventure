@@ -17,6 +17,7 @@ public class UIToggle : MonoBehaviour
     [SerializeField] private TMP_Text   _statsText; 
     [SerializeField] private GameObject _inventorySection; 
     [SerializeField] private TMP_Text   _inventoryText; 
+    [SerializeField] private GameObject _saveSection; 
 
 
     private bool  _isOpen = true; 
@@ -151,6 +152,7 @@ public class UIToggle : MonoBehaviour
         _questSection.SetActive(false); 
         _statsSection.SetActive(false); 
         _inventorySection.SetActive(false); 
+        _saveSection.SetActive(false); 
 
         // set the passed in sectionr to true 
         if (section == "quest")
@@ -165,6 +167,9 @@ public class UIToggle : MonoBehaviour
         {
             _inventorySection.SetActive(true); 
             RenderInventory(); 
+        } else if (section == "save")
+        {
+            _saveSection.SetActive(true); 
         }
     }
 }

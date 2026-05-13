@@ -28,4 +28,9 @@ public class QuestManager
     {
         return _activeQuests; 
     }
+
+    public void SetAllQuests(List<string> quests)
+    {
+        _activeQuests = new HashSet<string>(quests); 
+    }
 }

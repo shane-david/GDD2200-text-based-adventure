@@ -12,7 +12,7 @@ public class GameManager : Singleton<GameManager>
     [HideInInspector] public NPC CurrentNPC; 
     public NPC Narrator; 
 
-    private BaseSceneManager CurrentScene; 
+    public BaseSceneManager CurrentScene; 
     [HideInInspector] public string NextScene; 
     private HashSet<string> _visitedScenes = new(); 
 

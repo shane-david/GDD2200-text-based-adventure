@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using NUnit.Framework.Constraints;
 using UnityEngine; 
 
@@ -146,6 +147,12 @@ public class FlagManager : Singleton<FlagManager>
         }
     }
 
+    public void Reset()
+    {
+        _numberFlags.Clear();
+        _booleanFlags.Clear(); 
+    }
+
     //--------
     //setters
     //--------
@@ -160,6 +167,25 @@ public class FlagManager : Singleton<FlagManager>
         _questManager.RemoveQuest(quest); 
     }
 
+    public void SetNumberFlags(List<NumberFlag> flags)
+    {
+        _numberFlags = flags.ToDictionary(p => p.Key, p => p.Value); 
+    }
+
+    public void SetBooleanFlags(List<BooleanFlag> flags)
+    {
+        _booleanFlags = flags.ToDictionary(p => p.Key, p => p.Value); 
+    }
+
+    public void SetAllQuests(List<string> quests)
+    {
+        _questManager.SetAllQuests(quests); 
+    }
+
+    //-------
+    //getters
+    //-------
+
     public bool IsQuestActive(string quest)
     {
         return _questManager.IsQuestActive(quest); 
@@ -173,6 +199,21 @@ public class FlagManager : Singleton<FlagManager>
     public int GetHumanityScore() => _numberFlags["humanityScore"]; 
 
     public Dictionary<string, int> GetNumberFlags() => _numberFlags; 
+
+    public List<NumberFlag> NumberFlagsToList()
+    {
+        return _numberFlags.Select(kvp => new NumberFlag { Key = kvp.Key, Value = kvp.Value} ).ToList(); 
+    }
+
+    public List<BooleanFlag> BooleanFlagsToList()
+    {
+        return _booleanFlags.Select(kvp => new BooleanFlag { Key = kvp.Key, Value = kvp.Value} ).ToList(); 
+    }
+
+    public List<string> QuestsToList()
+    {
+        return _questManager.GetAllQuests().ToList(); 
+    }
 
 
 }

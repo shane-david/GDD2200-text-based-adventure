@@ -11,7 +11,7 @@ public class EndSceneManager : BaseSceneManager
 
     public override void Instantiate()
     {
-        Name = "EndScene"; 
+        Name = "EndScreen"; 
         Debug.Log("Insantiating End Scene"); 
 
         // set the text according to the proper ending
