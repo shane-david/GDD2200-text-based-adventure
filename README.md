@@ -15,4 +15,7 @@ For Main quest 2 the Github repository currently contains the build, along with 
 There are three endings in the game:
 - Óbrjótanligr vilji "Unbreakable Will" - obtained by beating the game having, burned your boats and having a humanity score greater than or equal to 10 
 - Hetja Fórn "A Hero's Sacrifice" - obtained by beating the game, having burned your boats, and having a humanity score less than 10
-- Skamfararferð "Shameful Return" - obtained by beating the game and having not burned your boats. 
+- Skamfararferð "Shameful Return" - obtained by beating the game and having not burned your boats.
+
+>[!Note]
+**This repository was archived after the completion of GDD2200 in the Spring 2026 semester**
